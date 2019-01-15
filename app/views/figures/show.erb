@@ -2,14 +2,14 @@
 
 <p>Titles: </p>
 <ul>
-  <% @figure.titles do |title| %>
+  <% @figure.titles.each do |title| %>
     <li><%= title.name %></li>
   <% end %>
 </ul>
 
 <p>Landmarks: </p>
 <ul>
-  <% @figure.landmarks do |landmark| %>
+  <% @figure.landmarks.each do |landmark| %>
     <li><%= landmark.name %></li>
   <% end %>
 </ul>
