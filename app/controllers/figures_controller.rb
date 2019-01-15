@@ -37,7 +37,7 @@ class FiguresController < ApplicationController
   end
 
   get "/figures/:id/edit" do
-    @figure = Figure.find_by_id(params[:id])
+    @figure = Figure.find(params[:id])
     @titles = Title.all
     @landmarks = Landmark.all
 
